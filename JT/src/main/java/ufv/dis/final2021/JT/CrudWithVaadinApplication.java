@@ -20,7 +20,7 @@ public class CrudWithVaadinApplication {
     @Bean
     public CommandLineRunner loadData(CustomerRepository repository) {
         return (args) -> {
-            // save customers
+            // save customer
             repository.save(new Customer("Diego", "Abad"));
             repository.save(new Customer("Juan", "Rodríguez"));
             repository.save(new Customer("Pedro", "Arranz"));
